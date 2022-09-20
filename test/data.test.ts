@@ -1,5 +1,4 @@
-import { ChainId, WETH, Token, Fetcher } from '../src';
-
+import { ChainId, WETH, Token, Fetcher } from '../src'
 
 // TODO: replace the provider in these tests
 describe.skip('data', () => {
