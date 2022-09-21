@@ -1,4 +1,4 @@
-import { Token, WETH, ChainId, Pair, TokenAmount, Route, DEV } from '../src'
+import { Token, WETH, ChainId, Pair, TokenAmount, Route, ETHER } from '../src'
 
 describe('Route', () => {
   const token0 = new Token(ChainId.MAINNET, '0x0000000000000000000000000000000000000001', 18, 't0')
@@ -24,17 +24,17 @@ describe('Route', () => {
     expect(route.output).toEqual(weth)
   })
 
-  it('supports DEV input', () => {
-    const route = new Route([pair_0_weth], DEV)
+  it('supports ETHER input', () => {
+    const route = new Route([pair_0_weth], ETHER)
     expect(route.pairs).toEqual([pair_0_weth])
-    expect(route.input).toEqual(DEV)
+    expect(route.input).toEqual(ETHER)
     expect(route.output).toEqual(token0)
   })
 
-  it('supports DEV output', () => {
-    const route = new Route([pair_0_weth], token0, DEV)
+  it('supports ETHER output', () => {
+    const route = new Route([pair_0_weth], token0, ETHER)
     expect(route.pairs).toEqual([pair_0_weth])
     expect(route.input).toEqual(token0)
-    expect(route.output).toEqual(DEV)
+    expect(route.output).toEqual(ETHER)
   })
 })
