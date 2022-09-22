@@ -86,6 +86,6 @@ export const WETH = {
     'Wrapped Ether'
   ),
   [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6', 18, 'WETH', 'Wrapped Ether'),
-  [ChainId.AXDC]: new Token(ChainId.AXDC, '0x29DDB0Fe9137BbFfDDF8DD598a6Cd9a3A18f7b6a', 18, 'WXDC', 'Wrapped XDC'),
-  [ChainId.XDC]: new Token(ChainId.XDC, '0x951857744785E80e2De051c32EE7b25f9c458C42', 18, 'WXDC', 'Wrapped XDC')
+  [ChainId.XDC]: new Token(ChainId.XDC, '0x951857744785e80e2de051c32ee7b25f9c458c42', 18, 'WXDC', 'Wrapped XDC'),
+  [ChainId.AXDC]: new Token(ChainId.AXDC, '0xc039850f937c623024da66d6df370022e6f16e30', 18, 'WXDC', 'Wrapped XDC')
 }
