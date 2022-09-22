@@ -12,7 +12,6 @@ import { Pair } from './pair'
 import { Route } from './route'
 import { currencyEquals, Token, WETH } from './token'
 
-
 /**
  * Returns the percent difference between the mid price and the execution price, i.e. price impact.
  * @param midPrice mid price before the trade
