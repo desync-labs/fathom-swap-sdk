@@ -66,7 +66,7 @@ export const WETH = {
   ),
   [ChainId.ROPSTEN]: new Token(
     ChainId.ROPSTEN,
-    '0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6',
+    '0x4e6736109E6e2B102742B5A4C8A95e72EBc27407',
     18,
     'WETH',
     'Wrapped Ether'
@@ -80,12 +80,30 @@ export const WETH = {
   ),
   [ChainId.GOERLI]: new Token(
     ChainId.GOERLI,
+    '0xA2A19F1515dB9D36A2d6f91261f1f32Cf4Bd8663',
+    18,
+    'WETH',
+    'Wrapped Ether'
+  ),
+  [ChainId.KOVAN]: new Token(
+    ChainId.KOVAN,
     '0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6',
     18,
     'WETH',
     'Wrapped Ether'
   ),
-  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6', 18, 'WETH', 'Wrapped Ether'),
-  [ChainId.XDC]: new Token(ChainId.XDC, '0x951857744785e80e2de051c32ee7b25f9c458c42', 18, 'WXDC', 'Wrapped XDC'),
-  [ChainId.AXDC]: new Token(ChainId.AXDC, '0xc039850f937c623024da66d6df370022e6f16e30', 18, 'WXDC', 'Wrapped XDC')
+  [ChainId.XDC]: new Token(
+    ChainId.XDC,
+    '0x951857744785E80e2De051c32EE7b25f9c458C42',
+    18,
+    'WXDC',
+    'Wrapped XDC'
+  ),
+  [ChainId.AXDC]: new Token(
+    ChainId.AXDC,
+    '0xc039850F937C623024DA66D6dF370022E6F16e30',
+    18,
+    'WXDC',
+    'Wrapped XDC'
+  )
 }
