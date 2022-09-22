@@ -101,7 +101,7 @@ export const WETH = {
   ),
   [ChainId.XDC]: new Token(
     ChainId.XDC,
-    '0x951857744785E80e2De051c32EE7b25f9c458C42',
+    '0xc039850f937c623024da66d6df370022e6f16e30',
     18,
     'WXDC',
     'Wrapped XDC'
