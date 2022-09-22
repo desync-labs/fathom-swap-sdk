@@ -66,7 +66,7 @@ export const WETH = {
   ),
   [ChainId.ROPSTEN]: new Token(
     ChainId.ROPSTEN,
-    '0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6',
+    '0x4e6736109E6e2B102742B5A4C8A95e72EBc27407',
     18,
     'WETH',
     'Wrapped Ether'
@@ -80,7 +80,7 @@ export const WETH = {
   ),
   [ChainId.GOERLI]: new Token(
     ChainId.GOERLI,
-    '0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6',
+    '0xA2A19F1515dB9D36A2d6f91261f1f32Cf4Bd8663',
     18,
     'WETH',
     'Wrapped Ether'

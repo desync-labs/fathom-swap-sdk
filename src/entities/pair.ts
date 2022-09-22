@@ -2,8 +2,8 @@ import { Price } from './fractions/price'
 import { TokenAmount } from './fractions/tokenAmount'
 import invariant from 'tiny-invariant'
 import JSBI from 'jsbi'
-import { pack, keccak256 } from '@baldyash/solidity'
-import { getCreate2Address } from '@baldyash/address'
+import { pack, keccak256 } from '@ethersproject/solidity'
+import { getCreate2Address } from '@ethersproject/address'
 
 import {
   BigintIsh,
@@ -55,8 +55,8 @@ export class Pair {
       tokenAmounts[0].token.chainId,
       Pair.getAddress(tokenAmounts[0].token, tokenAmounts[1].token),
       18,
-      'UNI-V2',
-      'Uniswap V2'
+      'FTHM-LP',
+      'Fathom Swap'
     )
     this.tokenAmounts = tokenAmounts as [TokenAmount, TokenAmount]
   }
