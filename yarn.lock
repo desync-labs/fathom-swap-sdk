@@ -3166,10 +3166,10 @@ fast-levenshtein@~2.0.6:
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
   integrity sha512-DCXu6Ifhqcks7TZKY3Hxp3y6qphY5SJZmrWMDrKcERSOXWQdMhU9Ig/PYrzyw/ul9jOIyh0N4M0tbC5hodg8dw==
 
-fathomswap-test-contracts@0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/fathomswap-test-contracts/-/fathomswap-test-contracts-0.1.0.tgz#76e7b62ccb00450876479619ef84bd4c7e951292"
-  integrity sha512-2vm27OeX7ljp1DbaYgKKFWjBPTPOaK/2Xvb90zTdTVJ7zSVRpSMPMdMMHoVAkV0890E1nfJiOYop3a090xPG9w==
+fathomswap-contracts@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/fathomswap-contracts/-/fathomswap-contracts-1.0.0.tgz#da9a84438ef1a7d689fc78899d1e0c0889748701"
+  integrity sha512-tCS6uiryxxNTceMOC7f9Fp0Jhlmw2egRKxyMZ1KL941/4hL/C84N/ntcreA+5aqSTZrdZssNugXIn7xL0g3zlw==
 
 fb-watchman@^2.0.0:
   version "2.0.1"

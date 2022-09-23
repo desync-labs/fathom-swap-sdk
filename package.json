@@ -1,6 +1,6 @@
 {
-  "name": "fathomswap-sdk",
-  "version": "1.9.0",
+  "name": "fathomswap-test-sdk",
+  "version": "0.4.0",
   "description": "🛠 An SDK for building applications on top of Fathomswap.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -21,7 +21,7 @@
     "prepublishOnly": "tsdx build"
   },
   "dependencies": {
-    "fathomswap-test-contracts": "0.1.0",
+    "fathomswap-contracts": "1.0.0",
     "big.js": "^5.2.2",
     "decimal.js-light": "^2.5.0",
     "jsbi": "^3.1.1",

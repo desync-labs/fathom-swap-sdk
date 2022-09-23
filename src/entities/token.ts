@@ -57,53 +57,11 @@ export function currencyEquals(currencyA: Currency, currencyB: Currency): boolea
 }
 
 export const WETH = {
-  [ChainId.MAINNET]: new Token(
-    ChainId.MAINNET,
-    '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
-    18,
-    'WETH',
-    'Wrapped Ether'
-  ),
-  [ChainId.ROPSTEN]: new Token(
-    ChainId.ROPSTEN,
-    '0x4e6736109E6e2B102742B5A4C8A95e72EBc27407',
-    18,
-    'WETH',
-    'Wrapped Ether'
-  ),
-  [ChainId.RINKEBY]: new Token(
-    ChainId.RINKEBY,
-    '0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6',
-    18,
-    'WETH',
-    'Wrapped Ether'
-  ),
-  [ChainId.GOERLI]: new Token(
-    ChainId.GOERLI,
-    '0xA2A19F1515dB9D36A2d6f91261f1f32Cf4Bd8663',
-    18,
-    'WETH',
-    'Wrapped Ether'
-  ),
-  [ChainId.KOVAN]: new Token(
-    ChainId.KOVAN,
-    '0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6',
-    18,
-    'WETH',
-    'Wrapped Ether'
-  ),
-  [ChainId.XDC]: new Token(
-    ChainId.XDC,
-    '0x951857744785E80e2De051c32EE7b25f9c458C42',
-    18,
-    'WXDC',
-    'Wrapped XDC'
-  ),
-  [ChainId.AXDC]: new Token(
-    ChainId.AXDC,
-    '0xc039850F937C623024DA66D6dF370022E6F16e30',
-    18,
-    'WXDC',
-    'Wrapped XDC'
-  )
+  [ChainId.MAINNET]: new Token(ChainId.MAINNET, '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2', 18, 'WETH', 'Wrapped Ether'),
+  [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, '0x4e6736109E6e2B102742B5A4C8A95e72EBc27407', 18, 'WETH', 'Wrapped Ether'),
+  [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6', 18, 'WETH', 'Wrapped Ether' ),
+  [ChainId.GOERLI]: new Token(ChainId.GOERLI, '0xA2A19F1515dB9D36A2d6f91261f1f32Cf4Bd8663', 18, 'WETH', 'Wrapped Ether'),
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6', 18, 'WETH', 'Wrapped Ether'),
+  [ChainId.XDC]: new Token(ChainId.XDC, '0x951857744785E80e2De051c32EE7b25f9c458C42', 18, 'WXDC', 'Wrapped XDC'),
+  [ChainId.AXDC]: new Token(ChainId.AXDC, '0xc039850F937C623024DA66D6dF370022E6F16e30', 18, 'WXDC', 'Wrapped XDC')
 }
