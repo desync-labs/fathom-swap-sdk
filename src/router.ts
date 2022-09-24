@@ -1,6 +1,7 @@
-import { Token, Currency, CurrencyAmount, Percent, TradeType, validateAndParseAddress } from '@fathomswap/sdk-core'
-import { Trade } from './entities'
+import { TradeType } from './constants'
 import invariant from 'tiny-invariant'
+import { validateAndParseAddress } from './utils'
+import { CurrencyAmount, ETHER, Percent, Trade } from './entities'
 
 /**
  * Options for producing the arguments to send call to the router.
@@ -36,11 +37,11 @@ export interface TradeOptionsDeadline extends Omit<TradeOptions, 'ttl'> {
 }
 
 /**
- * The parameters to use in the call to the FathomSwap V2 Router to execute a trade.
+ * The parameters to use in the call to the Uniswap V2 Router to execute a trade.
  */
 export interface SwapParameters {
   /**
-   * The method to call on the FathomSwap V2 Router.
+   * The method to call on the Uniswap V2 Router.
    */
   methodName: string
   /**
@@ -53,14 +54,14 @@ export interface SwapParameters {
   value: string
 }
 
-function toHex(currencyAmount: CurrencyAmount<Currency>) {
-  return `0x${currencyAmount.quotient.toString(16)}`
+function toHex(currencyAmount: CurrencyAmount) {
+  return `0x${currencyAmount.raw.toString(16)}`
 }
 
 const ZERO_HEX = '0x0'
 
 /**
- * Represents the FathomSwap V2 Router, and has static methods for helping execute trades.
+ * Represents the Uniswap V2 Router, and has static methods for helping execute trades.
  */
 export abstract class Router {
   /**
@@ -72,20 +73,17 @@ export abstract class Router {
    * @param trade to produce call parameters for
    * @param options options for the call parameters
    */
-  public static swapCallParameters(
-    trade: Trade<Currency, Currency, TradeType>,
-    options: TradeOptions | TradeOptionsDeadline
-  ): SwapParameters {
-    const etherIn = trade.inputAmount.currency.isNative
-    const etherOut = trade.outputAmount.currency.isNative
+  public static swapCallParameters(trade: Trade, options: TradeOptions | TradeOptionsDeadline): SwapParameters {
+    const devIn = trade.inputAmount.currency === ETHER
+    const devOut = trade.outputAmount.currency === ETHER
     // the router does not support both ether in and out
-    invariant(!(etherIn && etherOut), 'ETHER_IN_OUT')
+    invariant(!(devIn && devOut), 'DEV_IN_OUT')
     invariant(!('ttl' in options) || options.ttl > 0, 'TTL')
 
     const to: string = validateAndParseAddress(options.recipient)
     const amountIn: string = toHex(trade.maximumAmountIn(options.allowedSlippage))
     const amountOut: string = toHex(trade.minimumAmountOut(options.allowedSlippage))
-    const path: string[] = trade.route.path.map((token: Token) => token.address)
+    const path: string[] = trade.route.path.map(token => token.address)
     const deadline =
       'ttl' in options
         ? `0x${(Math.floor(new Date().getTime() / 1000) + options.ttl).toString(16)}`
@@ -98,12 +96,12 @@ export abstract class Router {
     let value: string
     switch (trade.tradeType) {
       case TradeType.EXACT_INPUT:
-        if (etherIn) {
+        if (devIn) {
           methodName = useFeeOnTransfer ? 'swapExactETHForTokensSupportingFeeOnTransferTokens' : 'swapExactETHForTokens'
           // (uint amountOutMin, address[] calldata path, address to, uint deadline)
           args = [amountOut, path, to, deadline]
           value = amountIn
-        } else if (etherOut) {
+        } else if (devOut) {
           methodName = useFeeOnTransfer ? 'swapExactTokensForETHSupportingFeeOnTransferTokens' : 'swapExactTokensForETH'
           // (uint amountIn, uint amountOutMin, address[] calldata path, address to, uint deadline)
           args = [amountIn, amountOut, path, to, deadline]
@@ -119,12 +117,12 @@ export abstract class Router {
         break
       case TradeType.EXACT_OUTPUT:
         invariant(!useFeeOnTransfer, 'EXACT_OUT_FOT')
-        if (etherIn) {
+        if (devIn) {
           methodName = 'swapETHForExactTokens'
           // (uint amountOut, address[] calldata path, address to, uint deadline)
           args = [amountOut, path, to, deadline]
           value = amountIn
-        } else if (etherOut) {
+        } else if (devOut) {
           methodName = 'swapTokensForExactETH'
           // (uint amountOut, uint amountInMax, address[] calldata path, address to, uint deadline)
           args = [amountOut, amountIn, path, to, deadline]
