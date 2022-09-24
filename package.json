@@ -1,19 +1,18 @@
 {
-  "name": "@fathomswap/v2-sdk",
-  "license": "MIT",
-  "version": "3.0.1",
-  "description": "🛠 An SDK for building applications on top of FathomSwap V2",
+  "name": "into-the-fathom-swap-sdk",
+  "version": "1.0.0",
+  "description": "🛠 An SDK for building applications on top of Fathom Swap.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/FathomSwap/fathomswap-v2-sdk.git",
+  "repository": "https://github.com/Into-the-Fathom/fathom-swap-sdk",
   "keywords": [
-    "fathomswap",
-    "ethereum"
+    "ethereum",
+    "fathomswap"
   ],
-  "module": "dist/v2-sdk.esm.js",
+  "module": "dist/sdk.esm.js",
   "scripts": {
     "lint": "tsdx lint src test",
     "build": "tsdx build",
@@ -22,16 +21,30 @@
     "prepublishOnly": "tsdx build"
   },
   "dependencies": {
-    "@ethersproject/address": "^5.0.0",
-    "@ethersproject/solidity": "^5.0.0",
-    "@fathomswap/sdk-core": "^3.0.0-alpha.3",
+    "fathomswap-contracts": "1.0.0",
+    "big.js": "^5.2.2",
+    "decimal.js-light": "^2.5.0",
+    "jsbi": "^3.1.1",
     "tiny-invariant": "^1.1.0",
-    "tiny-warning": "^1.0.3"
+    "tiny-warning": "^1.0.3",
+    "toformat": "^2.0.0"
+  },
+  "peerDependencies": {
+    "@into-the-fathom/address": "1.0.0",
+    "@into-the-fathom/contracts": "1.0.0",
+    "@into-the-fathom/networks": "1.0.0",
+    "@into-the-fathom/providers": "1.0.0",
+    "@into-the-fathom/solidity": "1.0.0"
   },
   "devDependencies": {
+    "@into-the-fathom/address": "1.0.0",
+    "@into-the-fathom/contracts": "1.0.0",
+    "@into-the-fathom/networks": "1.0.0",
+    "@into-the-fathom/providers": "1.0.0",
+    "@into-the-fathom/solidity": "1.0.0",
     "@types/big.js": "^4.0.5",
     "@types/jest": "^24.0.25",
-    "@fathomswap/v2-core": "^1.0.1",
+    "babel-plugin-transform-jsbi-to-bigint": "^1.3.1",
     "tsdx": "^0.14.1"
   },
   "engines": {
