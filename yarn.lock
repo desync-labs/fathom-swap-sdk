@@ -952,213 +952,261 @@
     "exec-sh" "^0.3.2"
     "minimist" "^1.2.0"
 
-"@into-the-fathom/abi@1.0.0":
-  "version" "1.0.0"
+"@into-the-fathom/abi@^1.1.0":
+  "integrity" "sha512-mgD2hObcxDPzpIP3HsWeSQl1Wt75tMo2GS/Pg8mlLkP/XrcmjaRXbHVGSu9t+83t2wnL2ryh7+lsGd8TLnPunw=="
+  "resolved" "https://registry.npmjs.org/@into-the-fathom/abi/-/abi-1.1.0.tgz"
+  "version" "1.1.0"
   dependencies:
-    "@into-the-fathom/address" "1.0.0"
-    "@into-the-fathom/bignumber" "1.0.0"
-    "@into-the-fathom/bytes" "1.0.0"
-    "@into-the-fathom/constants" "1.0.0"
-    "@into-the-fathom/hash" "1.0.0"
-    "@into-the-fathom/keccak256" "1.0.0"
-    "@into-the-fathom/logger" "1.0.0"
-    "@into-the-fathom/properties" "1.0.0"
-    "@into-the-fathom/strings" "1.0.0"
+    "@into-the-fathom/address" "^1.1.0"
+    "@into-the-fathom/bignumber" "^1.1.0"
+    "@into-the-fathom/bytes" "^1.1.0"
+    "@into-the-fathom/constants" "^1.1.0"
+    "@into-the-fathom/hash" "^1.1.0"
+    "@into-the-fathom/keccak256" "^1.1.0"
+    "@into-the-fathom/logger" "^1.1.0"
+    "@into-the-fathom/properties" "^1.1.0"
+    "@into-the-fathom/strings" "^1.1.0"
 
-"@into-the-fathom/abstract-provider@1.0.0":
-  "version" "1.0.0"
+"@into-the-fathom/abstract-provider@^1.1.0":
+  "integrity" "sha512-F1hc8fd6XNU4WkLqtkZ+IStO9LpolDPvVy38qpAhuu1qS8ROvKIQiBxF1hc2J1anSbN8lMMP4rHyzyuxyMJcAA=="
+  "resolved" "https://registry.npmjs.org/@into-the-fathom/abstract-provider/-/abstract-provider-1.1.0.tgz"
+  "version" "1.1.0"
   dependencies:
-    "@into-the-fathom/bignumber" "1.0.0"
-    "@into-the-fathom/bytes" "1.0.0"
-    "@into-the-fathom/logger" "1.0.0"
-    "@into-the-fathom/networks" "1.0.0"
-    "@into-the-fathom/properties" "1.0.0"
-    "@into-the-fathom/transactions" "1.0.0"
-    "@into-the-fathom/web" "1.0.0"
+    "@into-the-fathom/bignumber" "^1.1.0"
+    "@into-the-fathom/bytes" "^1.1.0"
+    "@into-the-fathom/logger" "^1.1.0"
+    "@into-the-fathom/networks" "^1.1.0"
+    "@into-the-fathom/properties" "^1.1.0"
+    "@into-the-fathom/transactions" "^1.1.0"
+    "@into-the-fathom/web" "^1.1.0"
 
-"@into-the-fathom/abstract-signer@1.0.0":
-  "version" "1.0.0"
+"@into-the-fathom/abstract-signer@^1.1.0":
+  "integrity" "sha512-sSwjQXPESx31xWCjX3/R4ha9SRVNveCY+z0Y/bBQBbbuvrK8C3FFwnmNCxabDHe6GMrxN95CFoZo4EUEMkCCuw=="
+  "resolved" "https://registry.npmjs.org/@into-the-fathom/abstract-signer/-/abstract-signer-1.1.0.tgz"
+  "version" "1.1.0"
   dependencies:
-    "@into-the-fathom/abstract-provider" "1.0.0"
-    "@into-the-fathom/bignumber" "1.0.0"
-    "@into-the-fathom/bytes" "1.0.0"
-    "@into-the-fathom/logger" "1.0.0"
-    "@into-the-fathom/properties" "1.0.0"
+    "@into-the-fathom/abstract-provider" "^1.1.0"
+    "@into-the-fathom/bignumber" "^1.1.0"
+    "@into-the-fathom/bytes" "^1.1.0"
+    "@into-the-fathom/logger" "^1.1.0"
+    "@into-the-fathom/properties" "^1.1.0"
 
-"@into-the-fathom/address@^1.0.0", "@into-the-fathom/address@1.0.0":
-  "version" "1.0.0"
+"@into-the-fathom/address@^1.1.0":
+  "integrity" "sha512-xut4U7nIXmQH1jP6fMyFLe07weIwGlNs9rHdfttTQ1DxgzcnS1IE7edCOdcpnmgkFeJA1h/AR44rXJbxUH+7Sg=="
+  "resolved" "https://registry.npmjs.org/@into-the-fathom/address/-/address-1.1.0.tgz"
+  "version" "1.1.0"
   dependencies:
-    "@into-the-fathom/bignumber" "1.0.0"
-    "@into-the-fathom/bytes" "1.0.0"
-    "@into-the-fathom/keccak256" "1.0.0"
-    "@into-the-fathom/logger" "1.0.0"
-    "@into-the-fathom/rlp" "1.0.0"
+    "@into-the-fathom/bignumber" "^1.1.0"
+    "@into-the-fathom/bytes" "^1.1.0"
+    "@into-the-fathom/keccak256" "^1.1.0"
+    "@into-the-fathom/logger" "^1.1.0"
+    "@into-the-fathom/rlp" "^1.1.0"
 
-"@into-the-fathom/base64@1.0.0":
-  "version" "1.0.0"
+"@into-the-fathom/base64@^1.1.0":
+  "integrity" "sha512-UEATVuIQV9AqLxzz9XTnWHJGBFOnxQcAzS1LsuHDwMJkFxoLVCp9F+HMoeqtsrpgSjbK7WWxPoOxmW7MaqYIkw=="
+  "resolved" "https://registry.npmjs.org/@into-the-fathom/base64/-/base64-1.1.0.tgz"
+  "version" "1.1.0"
   dependencies:
-    "@into-the-fathom/bytes" "1.0.0"
+    "@into-the-fathom/bytes" "^1.1.0"
 
-"@into-the-fathom/basex@1.0.0":
-  "version" "1.0.0"
+"@into-the-fathom/basex@^1.1.0":
+  "integrity" "sha512-U34RZnnBzhnoMzNoxtjxZjga5qCWFOZL6bkUMv1+AvRicJ6Emcd1lb9MsfIlI4QcWAOeHs6z6YbzDUjl/4PEBg=="
+  "resolved" "https://registry.npmjs.org/@into-the-fathom/basex/-/basex-1.1.0.tgz"
+  "version" "1.1.0"
   dependencies:
-    "@into-the-fathom/bytes" "1.0.0"
-    "@into-the-fathom/properties" "1.0.0"
+    "@into-the-fathom/bytes" "^1.1.0"
+    "@into-the-fathom/properties" "^1.1.0"
 
-"@into-the-fathom/bignumber@1.0.0":
-  "version" "1.0.0"
+"@into-the-fathom/bignumber@^1.1.0":
+  "integrity" "sha512-RMSF38g6f3iNJbJtOVeV+4EY+wObcYMaGT0vZjkOiEuQvgU2vxKJVVkT+FS5mLz57/86qCEWRrzDh0bAwf9X1Q=="
+  "resolved" "https://registry.npmjs.org/@into-the-fathom/bignumber/-/bignumber-1.1.0.tgz"
+  "version" "1.1.0"
   dependencies:
-    "@into-the-fathom/bytes" "1.0.0"
-    "@into-the-fathom/logger" "1.0.0"
+    "@into-the-fathom/bytes" "^1.1.0"
+    "@into-the-fathom/logger" "^1.1.0"
     "bn.js" "^5.2.1"
 
-"@into-the-fathom/bytes@1.0.0":
-  "version" "1.0.0"
+"@into-the-fathom/bytes@^1.1.0":
+  "integrity" "sha512-k9ekymMvNEAth04C44ikDbdwvdOwbmZwxDDViGpCD/+4z9gYiOk1NxGtmZABxwAWkVBANQdNO0Br/2WCuxqBMw=="
+  "resolved" "https://registry.npmjs.org/@into-the-fathom/bytes/-/bytes-1.1.0.tgz"
+  "version" "1.1.0"
   dependencies:
-    "@into-the-fathom/logger" "1.0.0"
+    "@into-the-fathom/logger" "^1.1.0"
 
-"@into-the-fathom/constants@1.0.0":
-  "version" "1.0.0"
+"@into-the-fathom/constants@^1.1.0":
+  "integrity" "sha512-hKFNQFWLANz7MrnUM1zgomKf3+CzWfLGFfKAT4okoQN+49780W+nca4H3e9t0MuuYcKVBb/yd9kR5geIQCHcRQ=="
+  "resolved" "https://registry.npmjs.org/@into-the-fathom/constants/-/constants-1.1.0.tgz"
+  "version" "1.1.0"
   dependencies:
-    "@into-the-fathom/bignumber" "1.0.0"
+    "@into-the-fathom/bignumber" "^1.1.0"
 
-"@into-the-fathom/contracts@^1.0.0":
-  "version" "1.0.0"
+"@into-the-fathom/contracts@^1.1.0":
+  "integrity" "sha512-awR/tHYF2E5XofqNy7EpmrBROVeKG0IwU6urL0VqvCowFubfz3xEveioS2RqQM1bin027Utm/1H7KJnzuZ/TiQ=="
+  "resolved" "https://registry.npmjs.org/@into-the-fathom/contracts/-/contracts-1.1.0.tgz"
+  "version" "1.1.0"
   dependencies:
-    "@into-the-fathom/abi" "1.0.0"
-    "@into-the-fathom/abstract-provider" "1.0.0"
-    "@into-the-fathom/abstract-signer" "1.0.0"
-    "@into-the-fathom/address" "1.0.0"
-    "@into-the-fathom/bignumber" "1.0.0"
-    "@into-the-fathom/bytes" "1.0.0"
-    "@into-the-fathom/constants" "1.0.0"
-    "@into-the-fathom/logger" "1.0.0"
-    "@into-the-fathom/properties" "1.0.0"
-    "@into-the-fathom/transactions" "1.0.0"
+    "@into-the-fathom/abi" "^1.1.0"
+    "@into-the-fathom/abstract-provider" "^1.1.0"
+    "@into-the-fathom/abstract-signer" "^1.1.0"
+    "@into-the-fathom/address" "^1.1.0"
+    "@into-the-fathom/bignumber" "^1.1.0"
+    "@into-the-fathom/bytes" "^1.1.0"
+    "@into-the-fathom/constants" "^1.1.0"
+    "@into-the-fathom/logger" "^1.1.0"
+    "@into-the-fathom/properties" "^1.1.0"
+    "@into-the-fathom/transactions" "^1.1.0"
 
-"@into-the-fathom/hash@1.0.0":
-  "version" "1.0.0"
+"@into-the-fathom/hash@^1.1.0":
+  "integrity" "sha512-3QNDdcfGXVA695nytHLt1jwbfZSj4+sdxMbK9WNDqcgdcrHam24sIUvpU7V2cDEI64+MFkVUfSee3vdvaFyJLA=="
+  "resolved" "https://registry.npmjs.org/@into-the-fathom/hash/-/hash-1.1.0.tgz"
+  "version" "1.1.0"
   dependencies:
-    "@into-the-fathom/abstract-signer" "1.0.0"
-    "@into-the-fathom/address" "1.0.0"
-    "@into-the-fathom/base64" "1.0.0"
-    "@into-the-fathom/bignumber" "1.0.0"
-    "@into-the-fathom/bytes" "1.0.0"
-    "@into-the-fathom/keccak256" "1.0.0"
-    "@into-the-fathom/logger" "1.0.0"
-    "@into-the-fathom/properties" "1.0.0"
-    "@into-the-fathom/strings" "1.0.0"
+    "@into-the-fathom/abstract-signer" "^1.1.0"
+    "@into-the-fathom/address" "^1.1.0"
+    "@into-the-fathom/base64" "^1.1.0"
+    "@into-the-fathom/bignumber" "^1.1.0"
+    "@into-the-fathom/bytes" "^1.1.0"
+    "@into-the-fathom/keccak256" "^1.1.0"
+    "@into-the-fathom/logger" "^1.1.0"
+    "@into-the-fathom/properties" "^1.1.0"
+    "@into-the-fathom/strings" "^1.1.0"
 
-"@into-the-fathom/keccak256@1.0.0":
-  "version" "1.0.0"
+"@into-the-fathom/keccak256@^1.1.0":
+  "integrity" "sha512-flN3lAV/lDIKh2dUEDxS52HxVT4v3NuT5IZxAVuEfBlS3wGy0jZZR5OzVcuL0VG93hQKCxHdzxDxm/qxP94oCw=="
+  "resolved" "https://registry.npmjs.org/@into-the-fathom/keccak256/-/keccak256-1.1.0.tgz"
+  "version" "1.1.0"
   dependencies:
-    "@into-the-fathom/bytes" "1.0.0"
+    "@into-the-fathom/bytes" "^1.1.0"
     "js-sha3" "0.8.0"
 
-"@into-the-fathom/logger@1.0.0":
-  "version" "1.0.0"
+"@into-the-fathom/logger@^1.1.0":
+  "integrity" "sha512-fFziiIGxL+9LKRBv3SdIKd942qcysTxsP/AQDLSAhbp+NDrnzERCJOHE8QywcmOD5KTLUEjLx2fO041ZIZQszQ=="
+  "resolved" "https://registry.npmjs.org/@into-the-fathom/logger/-/logger-1.1.0.tgz"
+  "version" "1.1.0"
 
-"@into-the-fathom/networks@^1.0.0", "@into-the-fathom/networks@1.0.0":
-  "version" "1.0.0"
+"@into-the-fathom/networks@^1.1.0":
+  "integrity" "sha512-pVcNK+EZQEk5MdZVt3O5eQtErf78EjtWmhC0POIvkZqutJf0GNuvz0ElaDoBEhcGX+c4rKutf1PFVKeS4zQdFw=="
+  "resolved" "https://registry.npmjs.org/@into-the-fathom/networks/-/networks-1.1.0.tgz"
+  "version" "1.1.0"
   dependencies:
-    "@into-the-fathom/logger" "1.0.0"
+    "@into-the-fathom/logger" "^1.1.0"
 
-"@into-the-fathom/properties@1.0.0":
-  "version" "1.0.0"
+"@into-the-fathom/properties@^1.1.0":
+  "integrity" "sha512-Law9ZPS+Y6ja8C8fY7/3bq67d34A+0wB6lysI5tdhL1W4kcKC0jVYI3jKMSqI9+3dhhH8bKS5C9kC1zj/Hlsfg=="
+  "resolved" "https://registry.npmjs.org/@into-the-fathom/properties/-/properties-1.1.0.tgz"
+  "version" "1.1.0"
   dependencies:
-    "@into-the-fathom/logger" "1.0.0"
+    "@into-the-fathom/logger" "^1.1.0"
 
-"@into-the-fathom/providers@^1.0.0":
-  "version" "1.0.0"
+"@into-the-fathom/providers@^1.1.0":
+  "integrity" "sha512-BrbpWmdtnm0JjFViC/3HX9Q1PxU0QvlWeeRxOckysn+i7CSUEL0fgdcjdASWZbeADwp0IXbgbqxyOuCBu7e/yw=="
+  "resolved" "https://registry.npmjs.org/@into-the-fathom/providers/-/providers-1.1.0.tgz"
+  "version" "1.1.0"
   dependencies:
-    "@into-the-fathom/abstract-provider" "1.0.0"
-    "@into-the-fathom/abstract-signer" "1.0.0"
-    "@into-the-fathom/address" "1.0.0"
-    "@into-the-fathom/base64" "1.0.0"
-    "@into-the-fathom/basex" "1.0.0"
-    "@into-the-fathom/bignumber" "1.0.0"
-    "@into-the-fathom/bytes" "1.0.0"
-    "@into-the-fathom/constants" "1.0.0"
-    "@into-the-fathom/hash" "1.0.0"
-    "@into-the-fathom/logger" "1.0.0"
-    "@into-the-fathom/networks" "1.0.0"
-    "@into-the-fathom/properties" "1.0.0"
-    "@into-the-fathom/random" "1.0.0"
-    "@into-the-fathom/rlp" "1.0.0"
-    "@into-the-fathom/sha2" "1.0.0"
-    "@into-the-fathom/strings" "1.0.0"
-    "@into-the-fathom/transactions" "1.0.0"
-    "@into-the-fathom/web" "1.0.0"
+    "@into-the-fathom/abstract-provider" "^1.1.0"
+    "@into-the-fathom/abstract-signer" "^1.1.0"
+    "@into-the-fathom/address" "^1.1.0"
+    "@into-the-fathom/base64" "^1.1.0"
+    "@into-the-fathom/basex" "^1.1.0"
+    "@into-the-fathom/bignumber" "^1.1.0"
+    "@into-the-fathom/bytes" "^1.1.0"
+    "@into-the-fathom/constants" "^1.1.0"
+    "@into-the-fathom/hash" "^1.1.0"
+    "@into-the-fathom/logger" "^1.1.0"
+    "@into-the-fathom/networks" "^1.1.0"
+    "@into-the-fathom/properties" "^1.1.0"
+    "@into-the-fathom/random" "^1.1.0"
+    "@into-the-fathom/rlp" "^1.1.0"
+    "@into-the-fathom/sha2" "^1.1.0"
+    "@into-the-fathom/strings" "^1.1.0"
+    "@into-the-fathom/transactions" "^1.1.0"
+    "@into-the-fathom/web" "^1.1.0"
     "bech32" "1.1.4"
     "ws" "7.4.6"
 
-"@into-the-fathom/random@1.0.0":
-  "version" "1.0.0"
+"@into-the-fathom/random@^1.1.0":
+  "integrity" "sha512-iqcoAGrjqs2gMSl4AabQkERloeOuWw/tmYALIkzJyL+wT5/nIPr52BoZILpQX6ksnHg9vnR2IcTj13ZngXk+xQ=="
+  "resolved" "https://registry.npmjs.org/@into-the-fathom/random/-/random-1.1.0.tgz"
+  "version" "1.1.0"
   dependencies:
-    "@into-the-fathom/bytes" "1.0.0"
-    "@into-the-fathom/logger" "1.0.0"
+    "@into-the-fathom/bytes" "^1.1.0"
+    "@into-the-fathom/logger" "^1.1.0"
 
-"@into-the-fathom/rlp@1.0.0":
-  "version" "1.0.0"
+"@into-the-fathom/rlp@^1.1.0":
+  "integrity" "sha512-ElHY1OSdVIBEYwW1CmQv/suwKglu2AwSG72yIpVwn0PJaVsantiBl0ohM2qnDqJYFb8/86ohqHqKLidh5Mij/w=="
+  "resolved" "https://registry.npmjs.org/@into-the-fathom/rlp/-/rlp-1.1.0.tgz"
+  "version" "1.1.0"
   dependencies:
-    "@into-the-fathom/bytes" "1.0.0"
-    "@into-the-fathom/logger" "1.0.0"
+    "@into-the-fathom/bytes" "^1.1.0"
+    "@into-the-fathom/logger" "^1.1.0"
 
-"@into-the-fathom/sha2@1.0.0":
-  "version" "1.0.0"
+"@into-the-fathom/sha2@^1.1.0":
+  "integrity" "sha512-HvbdD6AHNx8p2v/PJBzlr/kxK9xIYNEj1s5f4/4zId7/pdeuETZloEZyAYl1T2EjLVnZec7za/qdElK3Hy36ZA=="
+  "resolved" "https://registry.npmjs.org/@into-the-fathom/sha2/-/sha2-1.1.0.tgz"
+  "version" "1.1.0"
   dependencies:
-    "@into-the-fathom/bytes" "1.0.0"
-    "@into-the-fathom/logger" "1.0.0"
+    "@into-the-fathom/bytes" "^1.1.0"
+    "@into-the-fathom/logger" "^1.1.0"
     "hash.js" "1.1.7"
 
-"@into-the-fathom/signing-key@1.0.0":
-  "version" "1.0.0"
+"@into-the-fathom/signing-key@^1.1.0":
+  "integrity" "sha512-XrVammETh6JqNPkzVpcDee2uo8KCXnaegtFATpc4oYDAK69jPEhKvVXxHXhBBlqGp6YHZm1+4+o7WRsESpGSfg=="
+  "resolved" "https://registry.npmjs.org/@into-the-fathom/signing-key/-/signing-key-1.1.0.tgz"
+  "version" "1.1.0"
   dependencies:
-    "@into-the-fathom/bytes" "1.0.0"
-    "@into-the-fathom/logger" "1.0.0"
-    "@into-the-fathom/properties" "1.0.0"
+    "@into-the-fathom/bytes" "^1.1.0"
+    "@into-the-fathom/logger" "^1.1.0"
+    "@into-the-fathom/properties" "^1.1.0"
     "bn.js" "^5.2.1"
     "elliptic" "6.5.4"
     "hash.js" "1.1.7"
 
-"@into-the-fathom/solidity@^1.0.0":
-  "version" "1.0.0"
+"@into-the-fathom/solidity@^1.1.0":
+  "integrity" "sha512-t5+TcHknxTMivgUaj1nMQkWvyMaP3KxJwDcBgvePT4phIOQduzE0wmeeCZVX6ob1vhc8NlWSM9RZTmpszm7c7w=="
+  "resolved" "https://registry.npmjs.org/@into-the-fathom/solidity/-/solidity-1.1.0.tgz"
+  "version" "1.1.0"
   dependencies:
-    "@into-the-fathom/bignumber" "1.0.0"
-    "@into-the-fathom/bytes" "1.0.0"
-    "@into-the-fathom/keccak256" "1.0.0"
-    "@into-the-fathom/logger" "1.0.0"
-    "@into-the-fathom/sha2" "1.0.0"
-    "@into-the-fathom/strings" "1.0.0"
+    "@into-the-fathom/bignumber" "^1.1.0"
+    "@into-the-fathom/bytes" "^1.1.0"
+    "@into-the-fathom/keccak256" "^1.1.0"
+    "@into-the-fathom/logger" "^1.1.0"
+    "@into-the-fathom/sha2" "^1.1.0"
+    "@into-the-fathom/strings" "^1.1.0"
 
-"@into-the-fathom/strings@1.0.0":
-  "version" "1.0.0"
+"@into-the-fathom/strings@^1.1.0":
+  "integrity" "sha512-VWteKraJHlX4VxKnAdHI36tN+rlwI63a3Zxg02FIgbqTtno1w3bRCZTBT2Cgn/e4/Lwa9CHShDmC3hrtRzO9xA=="
+  "resolved" "https://registry.npmjs.org/@into-the-fathom/strings/-/strings-1.1.0.tgz"
+  "version" "1.1.0"
   dependencies:
-    "@into-the-fathom/bytes" "1.0.0"
-    "@into-the-fathom/constants" "1.0.0"
-    "@into-the-fathom/logger" "1.0.0"
+    "@into-the-fathom/bytes" "^1.1.0"
+    "@into-the-fathom/constants" "^1.1.0"
+    "@into-the-fathom/logger" "^1.1.0"
 
-"@into-the-fathom/transactions@1.0.0":
-  "version" "1.0.0"
+"@into-the-fathom/transactions@^1.1.0":
+  "integrity" "sha512-JAUtQKa2jBW6Q5qNrvsBRwaYYm0RA8+PzVCzTLJkn4z3ynMHa1D8OIk616m7qGTWQAJsOS+YDla7ouFvItwDuQ=="
+  "resolved" "https://registry.npmjs.org/@into-the-fathom/transactions/-/transactions-1.1.0.tgz"
+  "version" "1.1.0"
   dependencies:
-    "@into-the-fathom/address" "1.0.0"
-    "@into-the-fathom/bignumber" "1.0.0"
-    "@into-the-fathom/bytes" "1.0.0"
-    "@into-the-fathom/constants" "1.0.0"
-    "@into-the-fathom/keccak256" "1.0.0"
-    "@into-the-fathom/logger" "1.0.0"
-    "@into-the-fathom/properties" "1.0.0"
-    "@into-the-fathom/rlp" "1.0.0"
-    "@into-the-fathom/signing-key" "1.0.0"
+    "@into-the-fathom/address" "^1.1.0"
+    "@into-the-fathom/bignumber" "^1.1.0"
+    "@into-the-fathom/bytes" "^1.1.0"
+    "@into-the-fathom/constants" "^1.1.0"
+    "@into-the-fathom/keccak256" "^1.1.0"
+    "@into-the-fathom/logger" "^1.1.0"
+    "@into-the-fathom/properties" "^1.1.0"
+    "@into-the-fathom/rlp" "^1.1.0"
+    "@into-the-fathom/signing-key" "^1.1.0"
 
-"@into-the-fathom/web@1.0.0":
-  "version" "1.0.0"
+"@into-the-fathom/web@^1.1.0":
+  "integrity" "sha512-taKI+ytrlbBIPpC06AKaEGpxa4Lke82iBOKbntgQkU40guLBG3pVFdNk9emQ1Yq+IO55yRMa0IMRU1O4/DmiXQ=="
+  "resolved" "https://registry.npmjs.org/@into-the-fathom/web/-/web-1.1.0.tgz"
+  "version" "1.1.0"
   dependencies:
-    "@into-the-fathom/base64" "1.0.0"
-    "@into-the-fathom/bytes" "1.0.0"
-    "@into-the-fathom/logger" "1.0.0"
-    "@into-the-fathom/properties" "1.0.0"
-    "@into-the-fathom/strings" "1.0.0"
+    "@into-the-fathom/base64" "^1.1.0"
+    "@into-the-fathom/bytes" "^1.1.0"
+    "@into-the-fathom/logger" "^1.1.0"
+    "@into-the-fathom/properties" "^1.1.0"
+    "@into-the-fathom/strings" "^1.1.0"
 
 "@istanbuljs/load-nyc-config@^1.0.0":
   "integrity" "sha512-VjeHSlIzpv/NyD3N0YuHfXOPDIixcA1q2ZV98wsMqcYlPmv2n3Yb2lYP9XMElnaFVXg5A7YLTeLu6V84uQDjmQ=="
