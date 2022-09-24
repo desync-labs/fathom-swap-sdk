@@ -1,6 +1,6 @@
 import { INIT_CODE_HASH } from '../src/constants'
 
-import { bytecode } from 'fathomswap-contracts/artifacts/contracts/core/UniswapV2Pair.sol/UniswapV2Pair.json'
+import { bytecode } from 'into-the-fathom-swap-smart-contracts/artifacts/contracts/core/UniswapV2Pair.sol/UniswapV2Pair.json'
 import { keccak256 } from '@into-the-fathom/solidity'
 
 // this _could_ go in constants, except that it would cost every consumer of the sdk the CPU to compute the hash
