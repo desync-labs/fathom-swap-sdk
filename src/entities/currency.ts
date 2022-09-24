@@ -36,4 +36,6 @@ export class Currency {
 }
 
 const ETHER = Currency.ETHER
-export { ETHER }
+const XDC = Currency.XDC
+
+export { ETHER, XDC }
