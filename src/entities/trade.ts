@@ -2,7 +2,7 @@ import invariant from 'tiny-invariant'
 
 import { ChainId, ONE, TradeType, ZERO } from '../constants'
 import { sortedInsert } from '../utils'
-import { Currency, currencies } from './currency'
+import { Currency, ETHER, XDC, currencies } from './currency'
 import { CurrencyAmount } from './fractions/currencyAmount'
 import { Fraction } from './fractions/fraction'
 import { Percent } from './fractions/percent'
@@ -179,14 +179,18 @@ export class Trade {
     this.inputAmount =
       tradeType === TradeType.EXACT_INPUT
         ? amount
-        : currencies.has(route.input)
+        : route.input == ETHER
         ? CurrencyAmount.ether(amounts[0].raw)
+        : route.output == XDC
+        ? CurrencyAmount.xdc(amounts[amounts.length - 1].raw)
         : amounts[0]
     this.outputAmount =
       tradeType === TradeType.EXACT_OUTPUT
         ? amount
-        : currencies.has(route.output)
+        : route.output == ETHER
         ? CurrencyAmount.ether(amounts[amounts.length - 1].raw)
+        : route.output == XDC
+        ? CurrencyAmount.xdc(amounts[amounts.length - 1].raw)
         : amounts[amounts.length - 1]
     this.executionPrice = new Price(
       this.inputAmount.currency,
