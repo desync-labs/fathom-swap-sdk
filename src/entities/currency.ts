@@ -14,10 +14,13 @@ export class Currency {
   public readonly name?: string
 
   /**
-   * The only instance of the base class `Currency`.
+   * The Ether instance of the base class `Currency`.
    */
   public static readonly ETHER: Currency = new Currency(18, 'ETHER', 'ETHER')
 
+  /**
+   * The XDC instance of the base class `Currency`.
+   */
   public static readonly XDC: Currency = new Currency(18, 'XDC', 'XDC')
 
   /**
@@ -35,7 +38,9 @@ export class Currency {
   }
 }
 
+const currencies = new Set([Currency.ETHER, Currency.XDC])
+
 const ETHER = Currency.ETHER
 const XDC = Currency.XDC
 
-export { ETHER, XDC }
+export { ETHER, XDC, currencies }
