@@ -24,9 +24,9 @@ export class CurrencyAmount extends Fraction {
 
   /**
    * Helper that calls the constructor with the XDC currency
-   * @param amount xdc amount 
+   * @param amount xdc amount
    */
-   public static xdc(amount: BigintIsh): CurrencyAmount {
+  public static xdc(amount: BigintIsh): CurrencyAmount {
     return new CurrencyAmount(XDC, amount)
   }
 

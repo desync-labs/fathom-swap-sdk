@@ -38,10 +38,9 @@ export class Currency {
   }
 }
 
-const currencies = new Set([Currency.ETHER, Currency.XDC]);
-
+const currencies = new Set([Currency.ETHER, Currency.XDC])
 
 const ETHER = Currency.ETHER
 const XDC = Currency.XDC
 
-export { ETHER, XDC, currencies}
+export { ETHER, XDC, currencies }
