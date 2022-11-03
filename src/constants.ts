@@ -4,12 +4,6 @@ import JSBI from 'jsbi'
 export type BigintIsh = JSBI | bigint | string
 
 export enum ChainId {
-  MAINNET = 1,
-  ROPSTEN = 3,
-  RINKEBY = 4,
-  GOERLI = 5,
-  KOVAN = 42,
-
   XDC = 50,
   AXDC = 51
 }
@@ -26,11 +20,6 @@ export enum Rounding {
 }
 
 export const FACTORY_ADDRESS: { [key: string]: string } = {
-  [ChainId.MAINNET]: '0x0000000000000000000000000000000000000000',
-  [ChainId.ROPSTEN]: '0x49Ee816e49f7585AcC48eCB476AE107F3775e270',
-  [ChainId.RINKEBY]: '0x4f5e2Bd866FAB75A22d37Fd86EbDB4a768df54ce',
-  [ChainId.GOERLI]: '0xcaef5a76Caa3C7aCe06E5596b0a7c3d1e088c0fe',
-  [ChainId.KOVAN]: '0x7a4303D6a53d49f7E8CA473628FAec213A1dd0D0',
   [ChainId.XDC]: '0x0000000000000000000000000000000000000000',
   [ChainId.AXDC]: '0x69310bcBcC35b3d5C2b62C72E75dA68d58FDafC9'
 }

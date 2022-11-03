@@ -1,5 +1,5 @@
 import { currencyEquals } from '../token'
-import { Currency, ETHER, XDC } from '../currency'
+import { Currency, XDC } from '../currency'
 import invariant from 'tiny-invariant'
 import JSBI from 'jsbi'
 import _Big from 'big.js'
@@ -13,14 +13,6 @@ const Big = toFormat(_Big)
 
 export class CurrencyAmount extends Fraction {
   public readonly currency: Currency
-
-  /**
-   * Helper that calls the constructor with the ETHER currency
-   * @param amount ether amount in wei
-   */
-  public static ether(amount: BigintIsh): CurrencyAmount {
-    return new CurrencyAmount(ETHER, amount)
-  }
 
   /**
    * Helper that calls the constructor with the XDC currency
