@@ -6,8 +6,8 @@ const ADDRESSES = [
   '0x0000000000000000000000000000000000000002',
   '0x0000000000000000000000000000000000000003'
 ]
-const CHAIN_ID = ChainId.GOERLI
-const WETH = _WETH[ChainId.GOERLI]
+const CHAIN_ID = ChainId.AXDC
+const WETH = _WETH[ChainId.AXDC]
 const DECIMAL_PERMUTATIONS: [number, number, number][] = [
   [0, 0, 0],
   [0, 9, 18],
