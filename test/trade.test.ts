@@ -1,17 +1,5 @@
 import JSBI from 'jsbi'
-import {
-  ChainId,
-  XDC,
-  CurrencyAmount,
-  Pair,
-  Percent,
-  Route,
-  Token,
-  TokenAmount,
-  Trade,
-  TradeType,
-  WETH
-} from '../src'
+import { ChainId, XDC, CurrencyAmount, Pair, Percent, Route, Token, TokenAmount, Trade, TradeType, WETH } from '../src'
 
 describe('Trade', () => {
   const token0 = new Token(ChainId.XDC, '0x0000000000000000000000000000000000000001', 18, 't0')
@@ -33,11 +21,7 @@ describe('Trade', () => {
   const empty_pair_0_1 = new Pair(new TokenAmount(token0, JSBI.BigInt(0)), new TokenAmount(token1, JSBI.BigInt(0)))
 
   it('can be constructed with XDC as input', () => {
-    const trade = new Trade(
-      new Route([pair_weth_0], XDC),
-      CurrencyAmount.xdc(JSBI.BigInt(100)),
-      TradeType.EXACT_INPUT
-    )
+    const trade = new Trade(new Route([pair_weth_0], XDC), CurrencyAmount.xdc(JSBI.BigInt(100)), TradeType.EXACT_INPUT)
     expect(trade.inputAmount.currency).toEqual(XDC)
     expect(trade.outputAmount.currency).toEqual(token0)
   })
