@@ -56,7 +56,7 @@ export class Pair {
       Pair.getAddress(tokenAmounts[0].token, tokenAmounts[1].token),
       18,
       'FTHM-LP',
-      'Fathom Swap'
+      'Fathom DEX'
     )
     this.tokenAmounts = tokenAmounts as [TokenAmount, TokenAmount]
   }
