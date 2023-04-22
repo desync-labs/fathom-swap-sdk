@@ -1,6 +1,6 @@
 {
   "name": "into-the-fathom-swap-sdk",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "🛠 An SDK for building applications on top of Fathom Swap.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -10,7 +10,7 @@
   "repository": "https://github.com/Into-the-Fathom/fathom-swap-sdk",
   "keywords": [
     "ethereum",
-    "fathomswap"
+    "fathom dex"
   ],
   "module": "dist/sdk.esm.js",
   "scripts": {
@@ -21,7 +21,7 @@
     "prepublishOnly": "tsdx build"
   },
   "dependencies": {
-    "into-the-fathom-swap-smart-contracts": "^1.0.0",
+    "into-the-fathom-swap-smart-contracts": "^1.1.0",
     "big.js": "^5.2.2",
     "decimal.js-light": "^2.5.0",
     "jsbi": "^3.1.1",

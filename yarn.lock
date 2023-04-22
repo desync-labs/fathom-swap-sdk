@@ -3636,10 +3636,10 @@ interpret@^1.0.0:
   resolved "https://registry.npmjs.org/interpret/-/interpret-1.4.0.tgz"
   integrity sha512-agE4QfB2Lkp9uICn7BAqoscw4SZP9kTE2hxiFI3jBPmXJfdqiahTbUuKGsMoN2GtqL9AxhYioAcVvgsb1HvRbA==
 
-into-the-fathom-swap-smart-contracts@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/into-the-fathom-swap-smart-contracts/-/into-the-fathom-swap-smart-contracts-1.0.0.tgz"
-  integrity sha512-cNHsM5rzmAbpxfSafKjH5HDGCiCSfJhTIkpNO8H2E3PttTC90C4z6vyuPA4NFzySFjeFHGkCXc/TZsskiQPULQ==
+into-the-fathom-swap-smart-contracts@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/into-the-fathom-swap-smart-contracts/-/into-the-fathom-swap-smart-contracts-1.1.0.tgz#adfab9399fd77ce7fb616a3fbbb23ff4c76e4db4"
+  integrity sha512-LLwAA48vUBzV+jzWITVUmPr+ECcj1qoqdE1xja4eX7mnggzI/OujMELHXxd84DDHAilIKSPSjl56bUpkxiNS8w==
 
 ip-regex@^2.1.0:
   version "2.1.0"
