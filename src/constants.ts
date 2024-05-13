@@ -5,7 +5,8 @@ export type BigintIsh = JSBI | bigint | string
 
 export enum ChainId {
   XDC = 50,
-  AXDC = 51
+  AXDC = 51,
+  SEPOLIA = 11155111
 }
 
 export enum TradeType {
@@ -21,7 +22,8 @@ export enum Rounding {
 
 export const FACTORY_ADDRESS: { [key: string]: string } = {
   [ChainId.XDC]: '0x9fAb572F75008A42c6aF80b36Ab20C76a38ABc4B',
-  [ChainId.AXDC]: '0xe011699276055eDAd1E3fd2F98667068f7c8814A'
+  [ChainId.AXDC]: '0xe011699276055eDAd1E3fd2F98667068f7c8814A',
+  [ChainId.SEPOLIA]: '0x97989DFf5568F450970d404770f1975056834F93'
 }
 
 export const INIT_CODE_HASH = '0xa6d23746864049fd29713adbbf145eeecdddd2f9a91be053c057394dd5d7d9ad'
